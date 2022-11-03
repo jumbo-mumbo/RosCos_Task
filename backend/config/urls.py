@@ -7,6 +7,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api/', include('music.urls'))
-    #path("api/", include(router.urls)),
+    path("api/", include("music.urls"))
+    # path("api/", include(router.urls)),
 ]
