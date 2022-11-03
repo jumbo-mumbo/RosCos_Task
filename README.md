@@ -1,5 +1,5 @@
 # RosCos_Task
-Test task for roscos.
+[Условие для тз] (main.pdf)
 
 # Запускаем через Docker
 1) Клонируем репозиторий:
