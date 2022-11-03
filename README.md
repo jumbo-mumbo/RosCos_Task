@@ -19,7 +19,7 @@ docker-compose exec backend python manage.py migrate
 ```
 4) Заполним бд тестовыми данными из to_postgres.json
 ```
-docker-compose exec backend python manage.py makemigrations loaddata to_postgres.json
+docker-compose exec backend python manage.py loaddata to_postgres.json
 ```
 
 ## Готово! 
