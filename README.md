@@ -12,7 +12,7 @@ git clone https://github.com/RussianProgram/RosCos_Task.git
 cd /RosCoc_Task
 docker-compose up
 ```
-## Создаем миграции и суперюзера
+## Создаем миграции
 ```
 docker-compose exec backend python manage.py makemigrations music
 docker-compose exec backend python manage.py migrate
