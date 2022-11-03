@@ -7,7 +7,7 @@ Test task for roscos.
 git clone https://github.com/RussianProgram/RosCos_Task.git
 ```
 
-## Билдим образы в docker-compose
+## Билдим образы чурез docker-compose
 ```
 cd /RosCoc_Task
 docker-compose up
