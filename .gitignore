@@ -1,0 +1,6 @@
+.vscode
+/backend/db.sqlite3
+/backend/config/__pycache__
+/backend/music/__pycache__
+/backend/music/migrations
+

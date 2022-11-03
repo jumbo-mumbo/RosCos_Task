@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+
+  backend:
+    restart: always
+    build: ./backend
+    env_file:
+      - ./.env.dev
+    ports:
+      - "8000:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+    #volumes:
+      #- .:/code
+    depends_on:
+      - db
+  
+  db:
+    image: postgres:13
+    volumes:
+      - potgres_data:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+  
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:8080"
+    #volumes:
+      #- .:/code
+    depends_on:
+     - backend
+  
+volumes:
+  potgres_data:
