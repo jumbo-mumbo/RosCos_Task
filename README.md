@@ -21,6 +21,11 @@ docker-compose exec backend python manage.py migrate
 ```
 docker-compose exec backend python manage.py loaddata to_postgres.json
 ```
+5) Вход в админ панель
+```
+username: root
+password: ego
+```
 
 ## Готово! 
 Фронт-клиент: http://localhost:8080/
