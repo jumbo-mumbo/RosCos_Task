@@ -2,22 +2,22 @@
 Test task for roscos.
 
 # Запускаем через Docker
-## Клонируем репозиторий:
+1) Клонируем репозиторий:
 ```
 git clone https://github.com/RussianProgram/RosCos_Task.git
 ```
 
-## Билдим образы через docker-compose
+2) Билдим образы через docker-compose
 ```
 cd /RosCoc_Task
 docker-compose up
 ```
-## Создаем миграции
+3) Создаем миграции
 ```
 docker-compose exec backend python manage.py makemigrations music
 docker-compose exec backend python manage.py migrate
 ```
-## Заполним бд тестовыми данными из to_postgres.json
+4) Заполним бд тестовыми данными из to_postgres.json
 ```
 docker-compose exec backend python manage.py makemigrations loaddata to_postgres.json
 ```
